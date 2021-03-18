@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    /* background: url(/static/images/bg.jpeg); */
+    background: #fb5231;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #f4f0e4;
+    text-shadow: 2px 2px #7a2515;
+    backdrop-filter: blur(1.2px);
+    font-family: Arial;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.board-wrapper {
+    text-align: center;
+}
+
+#canvas {
+    border: 2px solid rgb(114, 105, 105);
+    background: #f4f0e4;
+
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+#pred-button,
+#reset-button {
+    margin: 2rem 3rem 0rem 3rem;
+    height: 3rem;
+    width: 6rem;
+    font-size: 1.5rem;
+}
+
+#pred-button:hover {
+    background: rgb(242, 247, 179);
+}
+
+#reset-button:hover {
+    background: rgb(242, 247, 179);
+}
+
+#prediction {
+    display: none;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fafafa;
+    font-family: Arial;
+}

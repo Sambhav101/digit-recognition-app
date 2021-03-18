@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta-tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- title of page -->
+    <title>Digit Recognizer</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="{{ url_for('static',  filename='css/app.css') }}">
+
+</head>
+
+<body>
+    <h1> Draw any digits from 0 to 9 </h1>
+    <div class="board-wrapper">
+        <canvas id="canvas" width=400px height=400px>
+            Sorry your browser doesn't support canvas technology
+        </canvas>
+    </div>
+    <div class="button-container">
+        <button type="button" id="pred-button" onclick=saveImage()>Predict</button>
+        <button type="button" id="reset-button" onclick=reset()>Reset</button>
+    </div>
+    <div id="prediction">
+        <h4>I am <strong id="percent"></strong>% certain your number is <strong id="answer"></strong>.</h4>
+    </div>
+
+    <!-- script tags -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous" async></script>
+
+    <script type="text/javascript" src="{{ url_for('static',  filename='javascript/app.js') }}"></script>
+
+</body>
+
+</html>
