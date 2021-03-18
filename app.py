@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for
 import json
 import numpy as np
-import tensorflow as tf
 import cv2
 import re
 import base64
