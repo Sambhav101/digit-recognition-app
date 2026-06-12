@@ -25,4 +25,4 @@ This was my first ML project, originally deployed on Heroku back in 2021. Heroku
 since retired its free tier, so the old link no longer works. I fixed up the outdated
 packages (TensorFlow/Keras/NumPy/OpenCV) and redeployed it on Hugging Face Spaces:
 
-**Live demo:** https://huggingface.co/spaces/Sambhav101/digit-recognition
+**Live demo:** https://huggingface.co/spaces/Sambhav111/digit-recognition
