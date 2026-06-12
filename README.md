@@ -1,13 +1,3 @@
----
-title: Digit Recognition
-emoji: ✏️
-colorFrom: indigo
-colorTo: purple
-sdk: docker
-app_port: 7860
-pinned: false
----
-
 # Digit recognition app
 
 An web app created using flask and a deep CNN model to identify hand-drawn digits. You can find the model at CNN folder. 
