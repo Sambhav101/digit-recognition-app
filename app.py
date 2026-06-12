@@ -1,15 +1,14 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 import json
-import os
+import base64
 import numpy as np
 import cv2
-import re
-import base64
-import keras
 from keras.models import load_model
 
-# model = tf.keras.load_model('model')
 app = Flask(__name__)
+
+# Load the trained CNN once at startup instead of on every request.
+model = load_model("cnn/model.h5")
 
 
 def reshape(img):
@@ -39,8 +38,6 @@ def reshape(img):
 
 def predict(resized_img):
 
-    # load model from the directory
-    model = load_model("cnn/model.h5")
     result = model.predict(resized_img)
     pred = int(np.argmax(result))
     percent = round(result[0, pred]/np.sum(result) * 100, 1)
